@@ -1,0 +1,44 @@
+#projects {
+    min-height: 92vh;
+    background-color: $primary-color1;
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 2rem;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+.project-title {
+    padding: 20px;
+}
+
+.project-title h2 {
+    font-size: 1.25rem;
+    padding-top: 10px;
+}
+
+a p {
+    line-height: 1.5;
+    padding: 10px 20px;
+}
+
+
+.project-title img {
+    width: 40vw;
+    height: auto;
+    border-radius: 4px;
+}
+
+.project-container {
+    @include flex(row, space-around, center);
+    flex-wrap: wrap;
+}
+
+
+@media (max-width:800px) {
+    .project-title img {
+        width: 60vw;
+    }
+}

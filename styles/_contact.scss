@@ -1,0 +1,83 @@
+#contact {
+    background-color: $secondary-color2;
+    height: 92vh;
+    text-align: center;
+    color: $primary-color2;
+    margin-top: 3rem;
+}
+
+#contact h1 {
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+}
+
+
+.contact-form {
+    @include flex(row, center, center);
+
+
+    form {
+        padding: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        @include flex(column, center, center);
+        border-radius: 2rem;
+
+    }
+}
+
+
+
+input,
+textarea {
+    margin: 1rem;
+    padding: 0.25rem 2.5rem;
+    resize: none;
+
+    &:focus {
+        outline: 2px solid $secondary-color1;
+    }
+}
+
+
+button {
+    width: 100%;
+    padding: 1.25rem;
+    background: $primary-color2;
+    color: white;
+
+    &:focus {
+        background: rgb(51, 105, 107);
+    }
+}
+
+@media (max-width:800px) {
+    #contact {
+        height: 100vh;
+    }
+}
+
+@media (max-width:400px) {
+    #contact {
+        margin-bottom: 5.79rem;
+    }
+
+    .contact-form {
+        form {
+            padding: 0.25rem 0rem;
+            margin: 2rem 0rem;
+            box-shadow: none;
+            height: 90vh;
+
+        }
+    }
+
+    button {
+        width: 50%;
+        margin-bottom: 10rem;
+    }
+
+    textarea {
+        padding: 0rem;
+    }
+}

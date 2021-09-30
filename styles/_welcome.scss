@@ -1,0 +1,55 @@
+#welcome-section {
+    @include flex(row, center, center);
+    flex: wrap;
+    height: 100vh;
+
+
+}
+
+.welcome-container {
+
+    flex: 1;
+    @include flex(column, center, center);
+
+
+
+    h1 {
+        padding: 2rem;
+    }
+
+    p {
+        padding: 1rem;
+    }
+}
+
+.welcome-container a {
+    padding: 20px;
+}
+
+
+.welcome-img-container {
+    flex: 1;
+
+}
+
+
+.welcome-img {
+    height: auto;
+    width: 100%;
+}
+
+.welcome-icon {
+    width: 40px;
+    height: auto;
+}
+
+
+
+
+
+@media (max-width:800px) {
+    #welcome-section {
+        @include flex(column, center, center);
+        flex: wrap;
+    }
+}

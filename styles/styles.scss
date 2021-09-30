@@ -1,0 +1,24 @@
+/* mixins*/
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    /* direction = row or column| justify = center flex-start flex-end space-around space-between
+|align = baseline stretch center flex-start flex-end*/
+}
+
+$primary-color1: #222831;
+$primary-color2: #393E46;
+$secondary-color1: #00ADB5;
+$secondary-color2: #EEEEEE;
+
+
+
+@import "contact";
+@import "global";
+@import "navbar";
+@import "welcome";
+@import "skills";
+@import "projects";
+@import "footer";

@@ -1,0 +1,41 @@
+#skills {
+    background-color: $secondary-color2;
+    color: $primary-color1;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 90vh;
+}
+
+#skills h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 18px;
+    line-height: 1.5;
+}
+
+
+
+
+#skills svg {
+    margin-top: 1rem;
+    height: auto;
+    width: 18vw;
+
+
+}
+
+
+
+
+@media (max-width:800px) {
+    #skills {
+        height: 100vh;
+    }
+}
+
+@media (max-width:400px) {
+    #skills h3 {
+        margin-bottom: 5rem;
+        font-size: 1.10rem;
+    }
+}
