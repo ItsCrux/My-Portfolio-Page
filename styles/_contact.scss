@@ -17,11 +17,14 @@
     @include flex(row, center, center);
 
 
+
     form {
-        padding: 2rem;
+        padding: 1rem;
+        width: 38%;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         @include flex(column, center, center);
         border-radius: 2rem;
+
 
     }
 }
@@ -31,8 +34,9 @@
 input,
 textarea {
     margin: 1rem;
-    padding: 0.25rem 2.5rem;
+    padding: 0.25rem 0rem;
     resize: none;
+    width: 80%;
 
     &:focus {
         outline: 2px solid $secondary-color1;
@@ -41,7 +45,8 @@ textarea {
 
 
 button {
-    width: 100%;
+    width: 70%;
+    border-radius: 5px;
     padding: 1.25rem;
     background: $primary-color2;
     color: white;
@@ -51,9 +56,34 @@ button {
     }
 }
 
-@media (max-width:800px) {
+@media (max-width: 1000px) {
+    .contact-form {
+        form {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width:640px) {
     #contact {
         height: 100vh;
+    }
+
+
+
+    .contact-form {
+        width: 100%;
+
+
+        form {
+            height: 70vh;
+            width: 100%;
+        }
+    }
+
+    input,
+    textarea {
+        width: 80%;
     }
 }
 
@@ -73,7 +103,7 @@ button {
     }
 
     button {
-        width: 50%;
+        width: 60%;
         margin-bottom: 10rem;
     }
 
